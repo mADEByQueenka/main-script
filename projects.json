@@ -3,7 +3,7 @@
   "@type": "ItemList",
   "name": "Official INFOREST projects",
   "url": "https://inforest.site/projects/",
-  "description": "Official public directory of projects in the INFOREST ecosystem.",
+  "description": "INFOREST is an independent project ecosystem. Its main initiative focuses on nature protection; other projects have their own separate purposes.",
   "publisher": {
     "@type": "Organization",
     "name": "INFOREST",
@@ -17,7 +17,7 @@
         "@type": "WebSite",
         "name": "INFOREST",
         "url": "https://inforest.site/",
-        "description": "Official website and environmental initiative focused on nature protection, awareness and practical cooperation."
+        "description": "Main website and environmental initiative focused on nature protection and environmental awareness."
       }
     },
     {
@@ -27,7 +27,7 @@
         "@type": "WebSite",
         "name": "INFOREST Europe",
         "url": "https://europe.inforest.site/",
-        "description": "European initiative for cooperation, awareness and a shared future."
+        "description": "Europe-focused INFOREST initiative marked SAVE EUROPE."
       }
     },
     {
@@ -37,7 +37,7 @@
         "@type": "WebSite",
         "name": "INFOREST Music",
         "url": "https://music.inforest.site/",
-        "description": "Independent music platform for listeners, artists and releases."
+        "description": "Music project built around its own catalogue."
       }
     },
     {
@@ -47,7 +47,7 @@
         "@type": "WebSite",
         "name": "INFOREST for Artists",
         "url": "https://artist.music.inforest.site/",
-        "description": "Artist-facing space for profiles, releases and music presence."
+        "description": "Artist-facing project within INFOREST Music. Current feature set should be checked on the official site."
       }
     },
     {
@@ -57,19 +57,29 @@
         "@type": "WebSite",
         "name": "ЛИНИЯ (LINEYA)",
         "url": "https://dnevnik.inforest.site/",
-        "description": "School platform for schedules, homework, grades and communication."
+        "description": "Electronic school diary project; separate from INFOREST environmental work."
       }
     },
     {
       "@type": "ListItem",
       "position": 6,
       "item": {
+        "@type": "WebSite",
+        "name": "INFOREST AI",
+        "url": "https://ai.inforest.site/",
+        "description": "AI chat on the INFOREST website."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
         "@type": "SoftwareApplication",
         "name": "INFOREST AI Secretary",
         "url": "https://t.me/inforestaibot",
+        "description": "AI secretary available through the official INFOREST Telegram bot.",
         "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Telegram",
-        "description": "AI assistant available through the official INFOREST Telegram bot."
+        "operatingSystem": "Telegram"
       }
     }
   ]
