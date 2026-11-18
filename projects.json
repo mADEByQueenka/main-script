@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Official INFOREST projects",
+  "url": "https://inforest.site/projects/",
+  "description": "Official public directory of projects in the INFOREST ecosystem.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "INFOREST",
+    "url": "https://inforest.site/"
+  },
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST",
+        "url": "https://inforest.site/",
+        "description": "Official website and environmental initiative focused on nature protection, awareness and practical cooperation."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST Europe",
+        "url": "https://europe.inforest.site/",
+        "description": "European initiative for cooperation, awareness and a shared future."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST Music",
+        "url": "https://music.inforest.site/",
+        "description": "Independent music platform for listeners, artists and releases."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST for Artists",
+        "url": "https://artist.music.inforest.site/",
+        "description": "Artist-facing space for profiles, releases and music presence."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "WebSite",
+        "name": "ЛИНИЯ (LINEYA)",
+        "url": "https://dnevnik.inforest.site/",
+        "description": "School platform for schedules, homework, grades and communication."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "INFOREST AI Secretary",
+        "url": "https://t.me/inforestaibot",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Telegram",
+        "description": "AI assistant available through the official INFOREST Telegram bot."
+      }
+    }
+  ]
+}
