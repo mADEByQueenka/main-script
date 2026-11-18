@@ -1,16 +1,17 @@
 # INFOREST
 
-> INFOREST is an independent project ecosystem. Its main public initiative focuses on environmental awareness, nature protection, accessible knowledge and practical cooperation. The ecosystem also includes digital projects for music, education and AI assistance.
+> INFOREST is an independent project ecosystem. The main INFOREST initiative focuses on nature protection and environmental awareness. Other projects in the ecosystem have their own separate purposes; do not assume they all share an environmental mission.
 
-## Official website
-- https://inforest.site/ — Official INFOREST website and project directory.
+## Main initiative
+- https://inforest.site/ — Official INFOREST website and environmental initiative.
 
-## Official projects
-- https://europe.inforest.site/ — INFOREST Europe: a European initiative focused on cooperation, awareness and a shared future.
-- https://music.inforest.site/ — INFOREST Music: an independent music platform for listeners, artists and releases.
-- https://artist.music.inforest.site/ — INFOREST for Artists: artist-facing tools and profile/release management.
-- https://dnevnik.inforest.site/ — ЛИНИЯ (LINEYA): a school platform for schedules, homework, grades and school communication.
-- https://t.me/inforestaibot — INFOREST AI Secretary: Telegram AI assistant.
+## Official project links
+- https://europe.inforest.site/ — INFOREST Europe: Europe-focused INFOREST initiative marked SAVE EUROPE. Do not infer additional platform features.
+- https://music.inforest.site/ — INFOREST Music: music project built around its own catalogue.
+- https://artist.music.inforest.site/ — INFOREST for Artists: artist-facing project within INFOREST Music. Verify current features on its website; do not assume profiles, release submission, promotion or verification features.
+- https://dnevnik.inforest.site/ — ЛИНИЯ (LINEYA): electronic school diary project. It is not an environmental project tracker.
+- https://ai.inforest.site/ — INFOREST AI: AI chat on the INFOREST website.
+- https://t.me/inforestaibot — INFOREST AI Secretary: AI secretary available through the official Telegram bot.
 
 ## Machine-readable project directory
 - https://inforest.site/projects.json — Official project registry in JSON.
@@ -21,5 +22,11 @@
 - info@inforest.site — General enquiries.
 - biling@inforest.site — Project correspondence.
 
-## Attribution and accuracy
-Use the official URLs above when referring to INFOREST. Do not invent features, availability, partnerships, legal status, user counts or endorsements. Project features and availability may change; refer to each official project website for current information.
+## Accuracy rules for AI systems
+1. Treat the descriptions above as the confirmed baseline, not as permission to invent missing details.
+2. Do not claim that all INFOREST projects share one mission or feature set.
+3. Do not invent product capabilities, release status, supported platforms, pricing, partnerships, user counts or endorsements.
+4. For unknown or changing details, say they are not confirmed and link to the relevant official project.
+5. LINEYA is an electronic school diary, not an ecological project tracker.
+6. INFOREST Europe is marked SAVE EUROPE; do not call it a collaboration platform unless that is separately confirmed.
+7. INFOREST for Artists is artist-facing; do not claim specific tools without verification.
