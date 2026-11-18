@@ -1,23 +1,43 @@
 # INFOREST Knowledge API
 
-Единый источник актуальных сведений о проектах INFOREST для всех ИИ-помощников экосистемы.
+Единый источник подтверждённых сведений о проектах INFOREST для ИИ-сервисов экосистемы.
 
-**Production URL:** https://inforest-knowledge-api.bogdan24112000.workers.dev
+**Production URL:** https://inforest-knowledge-api.bogdan24112000.workers.dev  
+**API version:** 2.0.0  
+**Policy:** verified facts only
 
 ## Endpoints
 
-- `GET /health` — состояние API и список методов.
-- `GET /v1/projects` — полный каталог официальных проектов.
-- `GET /v1/search?q=музыка` — поиск проектов по названию и ключевым словам.
-- `GET /v1/context?q=как подать заявку артисту` — контекст для системного сообщения ИИ: подтверждённые сведения и прямые ссылки.
+- `GET /health` — состояние API и версия.
+- `GET /v1/projects` — полный каталог с описаниями, статусами, подтверждёнными фактами и неподтверждёнными функциями.
+- `GET /v1/search?q=музыка` — поиск по названию и ключевым словам.
+- `GET /v1/context?q=что такое ЛИНИЯ` — системные правила и сведения для ИИ.
 
-Все методы публичные, только для чтения. CORS включён. Не передавайте сюда пароли, токены, персональные или приватные данные.
+## Accuracy rules
 
-## Подключение к любому INFOREST AI (JavaScript)
+1. Не придумывайте функции, цены, статусы разработки, доступность приложений, партнёрства, географию и способы участия.
+2. Не утверждайте, что все проекты INFOREST имеют одну экологическую миссию или общий набор функций.
+3. ЛИНИЯ (LINEYA) — проект электронного школьного дневника, а не экологический трекер.
+4. INFOREST Europe обозначен как SAVE EUROPE; не описывайте его как платформу сотрудничества без подтверждения.
+5. INFOREST for Artists — направление для артистов. Не обещайте профили, релизы, продвижение или верификацию без подтверждения.
+6. Если сведения отсутствуют или помечены как неподтверждённые, прямо сообщайте об этом и давайте официальный URL.
+7. Не утверждайте, что сайт, бот или интеграция работают прямо сейчас, если нет результата актуальной проверки.
+
+## Подключение к INFOREST AI
+
+- INFOREST AI — `https://ai.inforest.site/`
+- INFOREST AI Secretary — `https://t.me/inforestaibot`
+
+Оба сервиса запрашивают `/v1/context` и включают в контекст ИИ описания, подтверждённые сведения, ограничения и прямые ссылки. При недоступности API основной чат продолжает работу без каталога.
+
+## JavaScript client
 
 ```js
 export async function getInforestContext(userMessage) {
-  const endpoint = new URL("/v1/context", "https://inforest-knowledge-api.bogdan24112000.workers.dev");
+  const endpoint = new URL(
+    "/v1/context",
+    "https://inforest-knowledge-api.bogdan24112000.workers.dev"
+  );
   endpoint.searchParams.set("q", String(userMessage || "").slice(0, 500));
   const response = await fetch(endpoint);
   if (!response.ok) throw new Error("INFOREST Knowledge API unavailable");
@@ -25,28 +45,8 @@ export async function getInforestContext(userMessage) {
   if (!data.ok) throw new Error("Invalid INFOREST Knowledge API response");
   return data;
 }
-
-// Добавляйте data.system_context и ссылки из data.relevant_projects
-// в контекст ИИ перед генерацией ответа.
 ```
 
-## Правила
+## Security
 
-1. Считайте API единственным источником официальных названий и ссылок INFOREST.
-2. При вопросе о конкретном проекте включайте прямую ссылку в ответ.
-3. Не придумывайте несуществующие проекты, функции, цены и статусы.
-4. Обновляйте каталог в `worker.js`, когда проект меняет адрес или описание.
-5. Не помещайте секреты и пользовательские данные в каталог.
-
-## Подключения
-
-- INFOREST AI Secretary — подключён к `/v1/context` в личном и Business-режиме.
-- Sonora и ЛИНИЯ — в текущих версиях репозиториев отдельного ИИ-модуля не обнаружено; подключение возможно при добавлении ИИ-функций.
-
-
-## Live integration status
-
-- **INFOREST AI (the website chat Worker `inforest-ai`)** now requests `/v1/context?q=...` for each chat message and injects the official project list and relevant direct links into the model's system context.
-- **INFOREST AI Secretary** also has the same integration in its Worker.
-- If the knowledge API is temporarily unavailable, both assistants continue without the extra project context; they do not block ordinary chat.
-- Sonora and ЛИНИЯ do not currently expose an AI chat handler in the checked app code, so they are not connected as AI clients yet.
+API is public and read-only. Do not send passwords, tokens, personal or private data. Never place secrets or user data in the project catalogue.
