@@ -42,3 +42,11 @@ export async function getInforestContext(userMessage) {
 
 - INFOREST AI Secretary — подключён к `/v1/context` в личном и Business-режиме.
 - Sonora и ЛИНИЯ — в текущих версиях репозиториев отдельного ИИ-модуля не обнаружено; подключение возможно при добавлении ИИ-функций.
+
+
+## Live integration status
+
+- **INFOREST AI (the website chat Worker `inforest-ai`)** now requests `/v1/context?q=...` for each chat message and injects the official project list and relevant direct links into the model's system context.
+- **INFOREST AI Secretary** also has the same integration in its Worker.
+- If the knowledge API is temporarily unavailable, both assistants continue without the extra project context; they do not block ordinary chat.
+- Sonora and ЛИНИЯ do not currently expose an AI chat handler in the checked app code, so they are not connected as AI clients yet.
