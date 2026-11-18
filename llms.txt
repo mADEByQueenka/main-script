@@ -1,0 +1,25 @@
+# INFOREST
+
+> INFOREST is an independent project ecosystem. Its main public initiative focuses on environmental awareness, nature protection, accessible knowledge and practical cooperation. The ecosystem also includes digital projects for music, education and AI assistance.
+
+## Official website
+- https://inforest.site/ — Official INFOREST website and project directory.
+
+## Official projects
+- https://europe.inforest.site/ — INFOREST Europe: a European initiative focused on cooperation, awareness and a shared future.
+- https://music.inforest.site/ — INFOREST Music: an independent music platform for listeners, artists and releases.
+- https://artist.music.inforest.site/ — INFOREST for Artists: artist-facing tools and profile/release management.
+- https://dnevnik.inforest.site/ — ЛИНИЯ (LINEYA): a school platform for schedules, homework, grades and school communication.
+- https://t.me/inforestaibot — INFOREST AI Secretary: Telegram AI assistant.
+
+## Machine-readable project directory
+- https://inforest.site/projects.json — Official project registry in JSON.
+- https://inforest.site/projects/ — Human-readable project directory.
+- https://inforest.site/sitemap.xml — Sitemap for the main INFOREST website.
+
+## Contact
+- info@inforest.site — General enquiries.
+- biling@inforest.site — Project correspondence.
+
+## Attribution and accuracy
+Use the official URLs above when referring to INFOREST. Do not invent features, availability, partnerships, legal status, user counts or endorsements. Project features and availability may change; refer to each official project website for current information.
