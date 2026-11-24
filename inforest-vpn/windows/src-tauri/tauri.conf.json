@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "INFOREST VPN",
+  "version": "0.1.0",
+  "identifier": "site.inforest.vpn",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "INFOREST VPN",
+        "width": 1080,
+        "height": 720,
+        "minWidth": 820,
+        "minHeight": 600,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "category": "Network",
+    "shortDescription": "Open-source INFOREST desktop client",
+    "longDescription": "INFOREST VPN desktop client. Early development preview; tunnel engine not yet included."
+  }
+}
