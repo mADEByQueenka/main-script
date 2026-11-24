@@ -50,7 +50,7 @@
       "item": {
         "@type": "WebSite",
         "name": "INFOREST for Artists",
-        "url": "https://artist.music.inforest.site/",
+        "url": "https://artists.music.inforest.site/",
         "description": "Artist-facing project within INFOREST Music. Current feature set should be checked on the official site."
       }
     },
