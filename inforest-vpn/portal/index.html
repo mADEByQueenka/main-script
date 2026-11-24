@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a1b"><title>INFOREST VPN</title>
+<style>
+:root{color-scheme:dark;--bg:#071a1b;--panel:#0d2727;--line:#204342;--muted:#9ab8b3;--mint:#a5f3d0;--white:#effaf6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#174c43 0,transparent 42%),var(--bg);color:var(--white);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;min-height:100vh}
+.wrap{max-width:1050px;margin:auto;padding:28px 22px 70px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:800;letter-spacing:.14em}.tag{border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--mint);font-size:12px;letter-spacing:.08em}
+.hero{padding:76px 0 44px;max-width:720px}.eyebrow{color:var(--mint);font-size:12px;letter-spacing:.22em;font-weight:700}.hero h1{font-size:clamp(42px,8vw,76px);line-height:.98;letter-spacing:-.06em;margin:16px 0}.hero p{color:var(--muted);font-size:18px;max-width:620px}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.card{background:linear-gradient(145deg,#102e2c,#0a2021);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 18px 60px #0002}.card h2{font-size:19px;margin:0 0 14px}.status{display:flex;align-items:center;gap:10px;font-weight:700}.dot{width:9px;height:9px;background:#f2c879;border-radius:50%;box-shadow:0 0 14px #f2c87966}.muted{color:var(--muted)}.steps{display:grid;gap:13px;margin-top:18px}.step{display:flex;gap:13px;align-items:flex-start}.num{width:27px;height:27px;border-radius:9px;background:#173d38;color:var(--mint);display:grid;place-items:center;font-size:13px;font-weight:800;flex:none}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}a.btn,button.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:700;text-decoration:none;cursor:pointer;font-size:14px}.primary{background:var(--mint);color:#08211d}.secondary{background:#183735;color:var(--white);border:1px solid var(--line)!important}
+.note{margin-top:16px;padding:13px 15px;border-radius:12px;background:#332b1a;color:#f4dca9;font-size:13px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.feature{padding:17px;border:1px solid var(--line);border-radius:16px;background:#0b2222}.feature b{display:block;margin-bottom:5px}.feature span{font-size:13px;color:var(--muted)}
+footer{margin-top:34px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:58px}.features{grid-template-columns:1fr}.wrap{padding-inline:16px}}
+</style></head>
+<body><main class="wrap">
+<header class="top"><div class="brand">INFOREST<span style="color:var(--mint)"> / VPN</span></div><div class="tag">EARLY ACCESS · PREVIEW</div></header>
+<section class="hero"><div class="eyebrow">PRIVATE CONNECTIVITY PROJECT</div><h1>Connection,<br><span style="color:var(--mint)">with purpose.</span></h1><p>INFOREST VPN — проект защищённого подключения. Здесь будет управление профилем, подпиской и клиентскими приложениями.</p></section>
+<section class="grid">
+<article class="card"><h2>Состояние сервиса</h2><div class="status"><span class="dot"></span> Сервер не подключён</div><p class="muted">Портал опубликован как предварительная версия. VPN-туннель, узлы и персональные ссылки подписки пока не настроены.</p><div class="note">Не вставляй сюда конфигурации от неизвестных людей. Подписка должна вести на сервер, которому ты доверяешь.</div></article>
+<article class="card"><h2>Подключение через Happ</h2><p class="muted">Happ — клиент. Для подключения ему нужен действующий профиль или адрес подписки от собственного либо доверенного сервера.</p><div class="steps"><div class="step"><span class="num">1</span><div><b>Получить профиль</b><div class="muted">После настройки серверной части.</div></div></div><div class="step"><span class="num">2</span><div><b>Импортировать в Happ</b><div class="muted">Добавить ссылку подписки или конфигурацию.</div></div></div><div class="step"><span class="num">3</span><div><b>Проверить соединение</b><div class="muted">Проверить статус и работу сервера.</div></div></div></div></article>
+</section>
+<section class="features"><div class="feature"><b>Личный кабинет</b><span>Основа интерфейса для будущего управления профилем.</span></div><div class="feature"><b>Подписки и QR</b><span>Появятся после настройки реального API и серверов.</span></div><div class="feature"><b>Клиенты</b><span>Happ — первый этап; desktop-клиенты позже.</span></div></section>
+<footer><span>© INFOREST · VPN PROJECT</span><span>Preview build · No active VPN nodes</span></footer>
+</main></body></html>
