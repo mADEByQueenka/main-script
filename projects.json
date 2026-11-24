@@ -7,7 +7,11 @@
   "publisher": {
     "@type": "Organization",
     "name": "INFOREST",
-    "url": "https://inforest.site/"
+    "url": "https://inforest.site/",
+    "sameAs": [
+      "https://core.inforest.site/",
+      "https://invest.inforest.site/"
+    ]
   },
   "itemListElement": [
     {
@@ -73,6 +77,26 @@
     {
       "@type": "ListItem",
       "position": 7,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST CORE",
+        "url": "https://core.inforest.site/",
+        "description": "Central INFOREST project and service registry, integrations and feature management."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "WebSite",
+        "name": "INFOREST Invest",
+        "url": "https://invest.inforest.site/",
+        "description": "Educational assistant focused on financial literacy; not personalized financial advice."
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
       "item": {
         "@type": "SoftwareApplication",
         "name": "INFOREST AI Secretary",
